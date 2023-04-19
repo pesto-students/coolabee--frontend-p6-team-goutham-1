@@ -1,8 +1,0 @@
-{
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "no-descending-specificity": null,
-    "property-case": null,
-    "property-no-unknown": null
-  }
-}
