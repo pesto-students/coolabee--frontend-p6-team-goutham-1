@@ -1,0 +1,64 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "mocha": true,
+      "jest": true
+    },
+    "extends": ["airbnb", "prettier"],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly",
+      "window": true,
+      "document": true,
+      "localStorage": true,
+      "FormData": true,
+      "FileReader": true,
+      "Blob": true,
+      "navigator": true
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "babelOptions": {
+        "presets": ["@babel/preset-react"]
+      },
+      "ecmaVersion": 2020,
+      "requireConfigFile": false,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "prettier", "react-hooks"],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": 0,
+      "react/no-danger": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx"]
+        }
+      ],
+      "import/imports-first": ["error", "absolute-first"],
+      "import/newline-after-import": "error",
+      "react/prop-types": 0,
+      "no-console": 0,
+      "no-plusplus": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "react/jsx-props-no-spreading": "off",
+      // To disable alert warning
+      "no-alert": "off",
+      // For label tag we need one of the property
+      "jsx-a11y/label-has-associated-control": ["error", {
+        "required": {
+           "some": ["nesting", "id"]
+        }
+     }],
+     "jsx-a11y/label-has-for": ["error", {
+        "required": {
+           "some": ["nesting", "id"]
+        }
+     }]
+    }
+  }
