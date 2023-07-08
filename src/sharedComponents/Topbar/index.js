@@ -16,7 +16,7 @@ const Topbar = () => {
             <Box className={Styles.inner_container}>
                 <Box className={Styles.left_inner_container}>
                     <Typography className={Styles.hot_text_topnav}>
-                        Hot
+                        Coolabee
                     </Typography>
                     <Typography className={Styles.shipping_text_topnav}>
                         Free Express Shipping

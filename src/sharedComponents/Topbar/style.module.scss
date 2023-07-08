@@ -3,17 +3,20 @@
 
 .outer_container {
     background-color: $header_footer_background_color;
-    height : 5vh;
+    height : 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    
 }
 
 .inner_container {
-    width : 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     // align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 .inner_container a {
@@ -28,8 +31,8 @@
 
 .right_inner_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .right_inner_container div {
