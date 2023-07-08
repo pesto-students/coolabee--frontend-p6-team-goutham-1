@@ -10,7 +10,6 @@ function index() {
   return (
     <>
     <Topbar/>
-    <Header/>
     <Main/>
     <Footer/>
     </>
