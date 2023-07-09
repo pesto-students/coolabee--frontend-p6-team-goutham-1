@@ -42,6 +42,7 @@ function Login() {
           id="outlined-size-small"
           defaultValue="Abc@gmail.com"
           size="small"
+          type="password"
         />
         <div className={Styles.LoginForgotPassowordRow}>
         <FormControlLabel control={<Checkbox defaultChecked />} label="Remember Me" />
