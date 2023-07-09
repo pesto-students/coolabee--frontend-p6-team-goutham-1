@@ -1,0 +1,36 @@
+@import '../../scss/abstracts/_variables.scss';
+
+.outer_container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh !important;
+}
+
+.inner_container {
+    width : 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh !important;
+
+}
+
+.left_inner_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_inner_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_inner_container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

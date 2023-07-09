@@ -1,0 +1,46 @@
+@import '../../scss/abstracts/_variables.scss';
+
+.outer_container {
+    background-color: $footer_background;
+    height : 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_container {
+    width : 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.inner_container_column img{
+    // height: 200px !important;
+    width:100px
+}
+
+.inner_container_column {
+    margin : 0px 20px;
+    color: $footer_link_color !important;
+    line-height: 35px;
+}
+
+.inner_container_column a{
+    all: unset;
+    cursor: pointer;
+}
+
+.inner_container_column h6{
+    color: white;
+}
+
+.foolter_contact_us_icons{
+    font-size: 15px !important;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding : 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #212733;
+}
