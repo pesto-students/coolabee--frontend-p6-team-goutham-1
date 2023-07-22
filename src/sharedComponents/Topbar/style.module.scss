@@ -14,7 +14,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    align-items: center;
     margin-left: 5vh;
     margin-right: 5vh;
 }
@@ -58,4 +58,11 @@
 
 .topnav_icon {
     font-size: $font_size_icon_top_nav !important;
+}
+
+.loginbtn{
+    border: 1px solid white !important;
+    background-color: white !important;
+    color:$header_footer_background_color !important;
+    text-align: center;
 }

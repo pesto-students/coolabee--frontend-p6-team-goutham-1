@@ -1,14 +1,21 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Typography from "@mui/material/Typography";
 import CallIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/Facebook";
 import ShoppingCartIcon from '@mui/icons-material/Instagram';
+import Button from '@mui/material/Button';
 import Styles from './style.module.scss'
 // import './style.scss'
 
 const Topbar = () => {
+    const navigate=useNavigate();
+
+    const handleClick=()=>{
+        navigate("/auth")
+    }
+
     return (
         <Box
             className={Styles.outer_container}
@@ -23,27 +30,8 @@ const Topbar = () => {
                     </Typography>
                 </Box>
                 <Box className={Styles.right_inner_container}>
-                    <Box marginRight={{ xs: 1, sm: 2 }}>
-                        <Link to="/cart" >
-                            <Box >
-                                <CallIcon className={Styles.topnav_icon} />
-                            </Box>
-                        </Link>
-                    </Box>
-                    <Box marginRight={{ xs: 1, sm: 2 }}>
-                        <Link to="/cart" >
-                            <Box >
-                                <WhatsAppIcon className={Styles.topnav_icon} />
-                            </Box>
-                        </Link>
-                    </Box>
-                    <Box >
-                        <Link to="/cart" >
-                            <Box >
-                                <ShoppingCartIcon className={Styles.topnav_icon} />
-                            </Box>
-                        </Link>
-                    </Box>
+                <Button variant="text" className={Styles.loginbtn} onClick={handleClick}>Login</Button>
+                   
                 </Box>
             </Box>
         </Box>
