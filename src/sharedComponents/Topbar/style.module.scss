@@ -1,0 +1,68 @@
+@import '../../scss/abstracts/_variables.scss';
+// @import '../../scss/abstracts/_typography.scss';
+
+.outer_container {
+    background-color: $header_footer_background_color;
+    height : 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.inner_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.inner_container a {
+    color : white;
+}
+
+.left_inner_container{
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.right_inner_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.right_inner_container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot_text_topnav{
+    background-color: $highlight_red_color;
+    padding : 0px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.shipping_text_topnav {
+    color: white;
+    margin-left: 10px !important;
+    font-size: $font_size_top_nav !important;
+}
+
+.topnav_icon {
+    font-size: $font_size_icon_top_nav !important;
+}
+
+.loginbtn{
+    border: 1px solid white !important;
+    background-color: white !important;
+    color:$header_footer_background_color !important;
+    text-align: center;
+}

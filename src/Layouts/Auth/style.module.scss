@@ -1,0 +1,56 @@
+.AuthMainDiv{
+    display: flex;
+    background-color: #F0F8FF;
+}
+.AuthLeftDiv{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AuthRightMainDiv{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.AuthRightInnerDiv{
+    background: url('../../assets/Login/Login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100vh;
+
+}
+
+.LoginMainDiv{
+    display:flex;
+    flex-direction:column;
+    gap:2vh;
+    justify-content:center;
+    margin-top:8vh
+}
+.LoginForgotPassowordRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LoginAfterSignButtonRow{
+    display: flex;
+    justify-content: center;
+}
+
+.SignUpForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:2vh
+}
+.SignUpFormNamesRow{
+    display: flex;
+    gap:1vh;
+    margin-bottom: 2vh;
+}
